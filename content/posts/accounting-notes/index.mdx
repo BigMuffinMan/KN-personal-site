@@ -1,13 +1,10 @@
 ---
 title: Accounting
 date: 2022-09-12
+description: My summary of BIWS accounting notes
 tags:
-  - Code
-  - Markdown
+  - Finance
 ---
-
-## What to expect from here on out
-# Accounting
 
 ## How Financial Statements Link Together
 1. **[Income Statement]** Net Income from income statement => top of the CF statement
@@ -19,3 +16,267 @@ tags:
     - On Asset side, subtract CFS links
     - On L&E side, add CFS links
 
+## Balance Sheet
+
+### *Working Capital Assets/Liabilities*
+
+| Assets | Liabilities|
+| -------|------------|
+| Accounts Receivable *(Recognised revenue, yet to receive cash)*| Deferred Revenue *(Did not recognise revenue, received cash)*|
+| Prepaid Expenses *(Have not recognised expenses, paid cash)* | Accounts Payable *(Have recognised expense, yet to pay cash)* |
+| | Accrued Expenses *(Have recognised expense, yet to pay cash)*|
+
+Whether -ve working capital is good/bad depends on why
+Chaange in WC tells you if company needs to spend in advance to grow, or if it generates more cash as a result of growth
+
+### *Inventory*
+
+||IFRS|GAAP|Inv cost +|Inv cost -|
+|--|--|--|--|--|
+|FIFO|X|X|	COGs lower, net income higher, ending inventory higher, cash flow lower|COGs higher, net income lower, ending inventory lower, cash flow higher|
+LIFO||X|COGs higher, net income lower, ending inventory lower, cash flow higher	COGs lower, net income higher, ending inventory higher, CF lower|
+
+
+### *Capital Expenditures*
+
+* Growth vs Maintenance CapEx
+    * Growth CapEx and Revenue growth closely tied, along with working capital 
+    * Depreciation / CapEx ratio should converge to 1x over time
+
++ Capitalize vs Expen
+    + Capitalize Fixed Assets and intangible assets, benefits >1 year
+        + Land cannot be depreciated
+        + Goodwill cannot be amortized, but is instead tested for impariment on an annual basis
+        + Net Book Value = pruchase 
+    + Expense short term benefits less than 1 year
+
+- Depreciation Methods
+    - Straight Line Depreciation
+    - Double declining method 
+        > (100%/useful life)*2
+    - Units produced method 
+        > (units produced / lifetime capacity)
+    - Sum of Digits 
+        > (remaining life / Sum of Digits)
+
+### *Goodwill/Write-Downs/Impairments*
+- Impairment: when market value drops below historical cost
+- Tax accounting
+    - **Asset Sale**: Tax Deductible, non-amortizable
+    - **Stock Sale**: Non-Tax Deductible, non-amortizable
+    - Impairments are not tax deductible
+        > Book taxes fall but cash taxes stay the same, pay less cash taxes than book taxes in the future, DTA increases
+
+### *Stock Repurchases*
+- Dividends reduce cash
+- Stock Repurchases reduce cash and share count
+- Stock Repurchases are not tax deductible, increases DTA
+- Initial issuance does nto affect cash balance, which is the key difference vs Depreciation
+- Mechanics identical to impairments
+- Components:
+    - Common Stock
+    - Additional Paid In Capital  (valued at par value @ first issuance)
+    - Retained Earnings
+    - Treasury Stock
+    - AOCI
+
+|Depreciation|Impairments|Stock Repurchase|
+|------------|-----------|----------------|
+
+### *Deferred Tax*
+
+**Deferred Tax Liability**: Created when company expected to pay *higher* cash taxes than book taxes in the future
+
+**Deferred Tax Asset**: Created when company is expected to pay *lower* cash taxes than book taxes in the future
+
+- Net Operating Loss (NOL) is a type of DTA created when a company has lost money in previous years. It can reduce cash taxes in the future by applying these losses to reduce taxable income
+
+SBC/Amortization of intangibles, various write-downs and impairments all book tax but not cash tax deductible
+
+
+### *Operating and Finance Leases*
+||Operating Lease|Finance Lease|
+|------------|-----------|-----|
+|IS|Deduct Rent|Deduct Depreciation and Interest Expense|
+|CFS| Operating Lease Assets & Liabilities offset each other
+|BS|Both lease assets and lease liabilities decrease each year until the lease ends|?|
+
+    > IFRS: Operating leases work the same as finance leases, 
+        [IS] companies record interest and depreciation on the income statement, 
+        [CFS] add back depreciation on the Cash Flow statement, subtract lease princiopal repayment further down on the CFS
+
+### *Balance Sheet Metrics*
+
+*Returns Based Metrics*
+|Metrics|Advantages|Disadvantages|
+|--|--|--|
+|ROE|||
+|ROA|||
+|ROIC|||
+
+>**ROIC** = NOPAT/[Equity + Debt + Prefs + Other LT Funding]
+
+>**ROA** = Net income to common  / Avg Assets
+
+>**ROE** = Net income to common  / Avg Sh Equity
+
+*Credit Metrics*
+
+>**Leverage Ratio**: Total Debt/EBITDA
+
+>**ICR**: EBITDA/Interest Expense
+
+
+*Cash Conversion Metrics*
+
+>**DSO**: Accounts Receivable/Revenues * 365
+
+>**DIO**: Inventory / COGs * 365
+
+>**DPO**: Accounts Payable / COGs * 365
+>Cash Conversion Cycle = DSO + DIO - DPO
+
+### *Equity Method / Consolidation*
+
+||Ownership|Treatment|
+|--|--|--|
+|Equity Method|less than  50%|**IS:** ownership% * sub income **CFS:** reverse line, add ownership% * sub dividend **BS:** creates and asset that increases by equity investment earnings, and decreases by dividends|
+|Consolidation| >50%||
+|Security|small %||
+
+**Equity Method**
+Market Cap Increases
++ Change does not appear on IS, unless parent sells some of the stake based on the new market cap
++ Unrealised gains and losses on equity investments do not appear, only realised gains and losses
+
+Ownership % changes (sell only)
+1. First get Cost Basis, which is equity investments in the previous period + equity investment earnings - dividends
+2. Find the original value of the sake bought, deduct the new value now (cost basis?), and then adjust for % of stake you actually sell
+3. Impact on 3FS:
+    - [IS]: add realises gains/losses on IS, equity investment earnings will change because ownership % changes
+    - [CFS]: reverse all gains and losses, normal earnings/dividends line items also show up here
+    - [BS]: Earnings/Divs/Gains&losses/Purchases&sales all flow into balance sheet item
+
+
+**Consolidation**
+-	Financial statements are consolidated 100%
+    - IS: deduction of (1-ownership%) * sub net income
+    - CFS: reverse this line item because parent does get the net income in cash. Combine dividends of parent and sub, also add sub co’s dividends * ownership%
+    - Balance sheet (see below)
+
+1.	Write down sub equity
+2.	Add new good will
+3.	Eliminate old equity investments
+4.	Deduct cash used to fund deal
+5.	Add debt
+6.	Add common stock issued
+7.	NOTE: Asset side, debit means add, credit means subtract (when you add an assets, you pay up “debited”)
+    - Liabilities, debit means subtract, credit means add
+
+Notes
+1.	Deduct the equity investments line
+2.	CSE will record the discount/premium to book value of existing stake
+
+
+Income Statement	
+Balance Sheet	CSE: common shareholder’s equity + retained earnings – parent divs – stock repurchase + stock issuance (leave out sub divs)
+Cash Flow Statement	Dividends: add dividends from the ownership% * sub dividends because we do not actually lose 100% of dividends
+Equity investment earnings and NCI
+Divs from partially owned companies
+Cash:
+
+If >50% impacts:
+NCI
+Equity iinvestments
+
+NCI acts as a mini-shareholders’ equity line item for minority shareholders in sub co.
+
+De-consolidation, move back below 50% ownership
+1.	Noncontrolling interest is removed, and a new equity investment line item is created
+2.	Need to assume a market cap for this sub co. when ownership change takes place at end of 4 year period
+Gain/Loss calculation: Market value of stake sold + market value of new equity investment + book value of NCI being removed – net assets of sub (including goodwill created in previous deal)
+-	Why even add the book value of the NCI (?)
+-	Net assets of sub is the cost basis
+-	Only pay tax on the gains
+
+
+## Cash Flow Statement
+
+||Definition|
+|--|--|
+|FCF|CFO - CapEx, IFRS removes the lease depreciation add-back because company still pays the full lease expense in cash|
+|FCFe||
+|FCFf||
+
+*Cash Flow Proxy*
+
+**EBIT**: FCF
+**EBITDA**: CFO, non-GAAP measure
+
+## Income Statement
+
+### *Restructuring Costs*
+|IS|BS|CFS|
+|--|--|--|
+|Expense when charges are taken into account|Creates a restructuring liability when charges are taken into account|Non-cash portion increases cash from operating when charges are taken|
+|No expense when future cash outlays are made|Liability is reduced by the amount of cash outlay made|Cash outlays decrease cash from operating when made|
+
+**Examples of Restructuring Costs**
+- One-time benefits
+- Costs of terminating contracts
+- Costs of moving employees
+**Steps in recognising Restructuring Costs**
+1. [IS] less restructuring charge discounted to PV
+2. [IS] Recognise the discount and deduct on IS
+3. [BS] Accrestion expense is added to the liability, by end of the period, liability should equal to the undiscounted restructuring liability
+
+
+
+## Main Modelling Elements
+**Income Statement**: Split up Revenue and Expense drivers, show depreciation & amortization as separate line itmes
+**Balance Sheet**: Combine ST and LT versions of items, make a single net DTA line, one line for CSE
+**Cash Flow Statement**: Consolidate smaller items between net income and change in working capital
+- for CFI and CFF: CapEx, Equity and Debt Issuances, Stock Repurchases, Debt Repayments, and Dividends
+- Equity and Debt Issuance: Only impacts cash flow from financing initially.
+    >- Equity: Share count increases, diluting existing investors
+    >- Debt: Company must pay interest, which will be recorded on its IS, reducing net income and cash, and it must fully repay
+
+## GAAP vs IFRS
+
+GAAP classified all fixed assets into predetermined baskets to estimate their useful life
+Cost of the asset includes everything needed to get the asset ready for use (including shipping costs, building costs etc)
+
+||GAAP|IFRS|
+|--|--|--|
+|Balance Sheet|Most Liquid to least liquid|Least Liquid to most liquid|
+|Cash Flow|Interest paid and received classfied as op activities, Dividends are in financing|Flexible. Also starts CFS with operating income|
+|Asset Revaluation|Does not allow for asset's value to be written back up after impairment|allows for revaluation up to original cost|
+|Inventory Revaluation|FIFO/LIFO/WeightedAvg|No LIFO|
+|Leases|Rental expense within operating expenses|Operating lease expense split into interest and depreciation elements|
+
+## Questions on changes to 3 Statements
+
+
+### *Working Capital Changes*
+
+||Increases|Decreases
+|--|--|--|
+|Accounts Receivable (A)|	IS (+rev)| |	
+|Prepaid Expenses (A)||IS (+expenses)|
+|Inventory (A)|	|IS (+COGs)|
+|Accounts Payable (L)|IS (+expenses, not necessarily)||	
+|Accrued Expenses (L)|IS (+expenses)||	
+|Deferred Revenue (L)||IS (+Rev)|
+
+
+### *Lease Changes*
+For all lease qns, when lease first signed, lease asset and lease liability both increase by the same amount on the balance sheet
+- **FINANCE lease**: records interest expense and depreciation on the lease
+    - Interest expense = discount rate * lease liability
+    - Depreciation = initial lease asset/lease term
+    - Lease principal payment (on CFS) = Cash lease expense – interest expense
+- **OPERATING lease (under GAAP)**
+    - IS: rental expense
+    - Interest expense = Discount rate * lease liability
+    - Depreciation = cash lease – interest expense
+    - Lease principal repayment = straight line rental expense – interest expense

@@ -1,0 +1,205 @@
+---
+title: Equity and Enterprise Value
+date: 2022-09-12
+description: My summary of BIWS accounting notes
+tags:
+  - Finance
+---
+
+## EV/EQ Condensed
+
+> **Company value** = Cash Flow / discount rate – growth rate
+
+> **Equity Value** = Value of all companies net assets, but to equity investors
+
+> **Enterprise Value** = Value of core operating assets to all investors
+
+**Equity value calculations**
+1. Shares outstanding * Share price
+2.	Market value of total assets – market value of (everything on the L&E side other than CSE)
+3.	Last round valuation
+
+**Enterprise value calculations**
+- Equity value – non operating assets + liability and equity items that represent other investor groups
+    - Non operating assets:
+        - Cash
+        - Financial investments
+        - Owned properties that generate rental income
+        - Side businesses
+        - Assets held for sale
+        - Equity investments or associate companies minority stake (less than 50%)
+        - NOLs
+    - Other investor groups
+        - Capital leases
+        - Non-controlling interests (unowned portions of majority owned companies)
+        - Unfunded pensions (if DB)
+        - (maybe) Operating leases
+
+**EV vs EQ**
+- 	EV can be negative, EQ can’t
+- 	Both implied EV and EQ can be negative
+- 	In theory, financing events do not impact EV
+    - Issue $100 in CSE, $100 additional cash, $100 additional CSE. Equity value increases by $100 but offset by $100 additional cash since cash is non-operating asset
+    - EV only changes if net operating assets change
+        - PPE increases, no operating liabilities change, NOA increases
+        - Inventory increases, no operating liabilities change, NOA increases
+        - Accounts receivable decreases, AR is also an operating asset, no operating liabilities change, NOA decreases, EV decreases
+        - Deferred revenue increases, no operating assets change, NOA decreases, EV decreases
+        - EQ doesn’t change in these examples because cash balances out each change
+
+**Myths**
+- EV is not cost to acquire the company
+- Min purchase value is EQ
+- EV is not the true value of the company
+- Debt does not “add” to EV and cash does not “subtract” from EV
+- Cash is not the opposite of debt
+
+**Events that impact EV and EQ**
+
+> Key Question: does CSE change? And does NOA change? Things that impact CSE: Net income, dividends, stock issuances, stock repurchases
+
+*Category 1:* Capital structure changes
+
+*Category 2:* Op Assets and Liability Changes. DR increases > Net Operating assets decrease because cash is not an NOA but DR is an operating liability
+
+*Category 3:* Unusual events on the income statement. Preferred stock on BS does not change when company issues pref dividends
+
+**Impact of financing on EV in real life**
+1.	On WACC: raising debt, equity, repaying debt, repurchasing stock
+    - Changing values of debt, equity and stock will impact WACC
+        - Increasing debt reduce WACC at first
+        - Increasing equity reduce WACC at first (?): Repurchasing stock, CSE reduce but debt increase, reduce WACC at first
+    - At different levels of debt and equity, costs of debt and equity also changes: higher debt levels cost of debt and equity both go up
+2.	Capital structure impact on discount rate:
+    - Taxes: interest paid on debt is tax deductible
+    - Bankruptcy risk: debt increases bankruptcy risk
+    - Agency costs: Debt investors want companies to be as conservative as possible, equity investors opposite
+    - Efficient markets: debt/equity/prefs could have other costs irl
+
+**Dilutive Equity**
+- Stock options, employees have option to buy share at certain price
+    - Treasury Stock Methods: Employee exercises options which increases share count, company uses proceeds received from exercise fee to buy back
+    - Private companies just use implied because they don’t disclose share count
+    - Ignore ADRs because they represent shares on home market and are not new shares
+- Convertible bond: bond convertible to equity at a certain price
+    - All or nothing
+    - Companies often issue converts with “capped call” transaction where they buy calls on their stock at the conversion price for converts and sells warrants at a higher price
+- RSUs: like normal shared but with restrictions on when employees receive them and when they can sell them
+    - Restricted stock usually included in CS count, RSUs are not
+    - Treasury Stock Method
+
+**EQ to EV bridge**
+> EV = EQ – NOA + Liabilities  and equity items that represent other investor groups, preferably use market values
+
+*NOAs:* Cash, Financial investments, rental properties, side businesses, HFS assets, Discontinued operations, Equity investments or associate companies, and NOLs
+
+*Liabilities that represent other groups:* Debt, preferred stock, capital leases, NCI, unfunded pensions, Op Leases (could go either way under GAAP, must be included under IFRS). Unfunded pensions tax deductible under GAAP, not tax deductible under IFRS
+
+*Goodwill and intangibles* NEVER here, DTAs/DTLS, industry specific assets
+
+**Revenue/EBIT/EBITDA/EBITDA/Net Income**
+- To whom is money available
+- OpEx vs CapEx
+    - EBIT deducts OpEx and the after effects of CapEx
+    - EBITDA deducts OpEx but no CapEx
+    - EBITDAR also deducts OpEx but not CapEx
+    - Net Income deducts OpEx and the after effects of CapEx
+- Rent lease expense
+    - Revenue: never deducted, used when EBIT/EBITDA is negative
+    - EBIT: full deduction for the rental expense under GAAP, under IFRS only depreciation element is deducted, close to FCF
+    - EBITDA: Full deduction for rental expense under GAPP, under IFRS both dep and interest elements are not deducted, close to CFO
+    - EBITDAR: no rental expense deducted, to compare companies following US GAAP vs IFRS. IFRS keeps rent/lease expense up to EBIT level
+- Interest/ Tax
+    - Anything other than Net Income: none deduct net interest expense or taxes, none add non-core biz income or subtract non-core expneses
+    - Net Income: deducts net interest expense and taxes
+
+**Free Cash Flow**
+
+|Type|Formula|Details|
+|--|--|--|	
+|FCF|CFO – CapEx (make sure CFO deducts net interest expenses, taxes, lease expenses etc)|
+|Unlevered FCF| available to all investors, NOPAT + D&A and non cash adjustments + change in NWC – CapEx| Main non-cash adjustment other than D&A is usually deferred income taxes| 
+|||Under IFRS, need to deduct operating lease interest element from EBIT and add the D&A excluding lease D&A|
+|||Don’t change: **SBC:** non a real non cash expense **Impairments/gains and losses/write down:** shoud have already excluded these in EBIT **Intangibles:** only factor if they are recurring **Amortization of Debt discounts:** do not add or subtract **Income or divs from associates:** do not add or subtract because unrelated to core biz|
+|Levered FCF| Net Income to common + D&A and sometimes other non-cash adjustments + change in NWC – CapEx – debt repayments(?) + debt issuances (sometimes)||
+
+**Pairing multiples**
+- Rule 1: if deduct net interest expense, use EQ
+- Rule 2: if denominator of TEV base multiple does not deduct income statement expense, numerator should add its corr BS line item
+    - For eg, EBITDA adds back interest expense, so EV adds company’s debt
+    - EBITDAR adds back rental expense, so numerator adds operating leases
+    - Under GAAP, EV/EBITDAR if EV includes operating leases
+    - Under IFRS, EV always includes operating leases
+    - Under IFRS
+    - Avoid half pregnant metrics
+
+**BS metrics and multiples**
+- Book Value: Total Assets – Total Liabilites, always pairs with EQ
+- Net Operating Assets: Operating Assets – Operating Liabilites, always pairs with EV
+- Invested Capital : Book value of Equity + Debt + Prefs + Other Investor Groups + Op leases (?), always pairs with EV
+
+**Industry specific multiples**
+
+|Industry|Multiple|
+|--|--|
+|FIG banks & Insurance| EV concept is invalid because you can’t separate “Operating Assets” and “Operating Liabilities” from Total assets and total liabilities, e.g. loan is NOA to a typical company, but is an OA to a bank
+|Metals & Mining| Reserves/Resources/Production as denominator
+|Oil & Gas|reserves and production, Upstream: some capitalize the cost of all exploration, so use EBITDAX to normalize treatments, Midstream: “Distributable Cash Flow” important because structured as MLPs (?), Downstream: standard metrics and multiples
+|Real Estate & REITs| Use FFO instead of net income, FFO = Net Income + D&A – Gains + Losses
+|Healthcare| no major diff
+|Airlines| EV inc operating lease / EBITDAR common because some airlines lease/some own
+|Power & Utilities, CleanTech| no major diff, MW supply = Existing generation – Expected Retirements + Expected Additions + Net Imports
+|Consumer/Retail| No major diffSSS, Inventory Turnover, Sales/store, Sales/sqft
+|Chemicals| no major diff
+|Construction Services| no major diff, Backlog/Option Years/ Book to Bill
+|Transportation & Logistics| no major diff
+|Technology| no major diff
+|Media/Telecom| no major diff
+
+**How to use multiples:**
+- Always base historical/forward multiples on current EQ/EV
+- Multiples are short hand for full valuation
+- Cash flow / (discount rate – cash flow gr)
+
+**Equity investments and NCI**
++ Equity investments: Minority stakes in other companies
+    - NOT consolidated
+
+- If own >50%
+    - Consolidated balance sheet
+    - IS: (if 70% ownership) Net income – 30%*B net income
+    - CFS: only 70% of B’s dividends
+    - EQ to EV, subtract equity investments add NCIs
+
+**Pensions in EV**
+> Only DB plans matter, DC plans do not factor into EV at all since they are responsibility of employees. Even if companies match, it is a single line item on the IS with no matching BS item
+
+
+1. Add unfunded pension (Pension liabilities – pension assets)
+2. Tax adjust the unfunded pension if contributions are tax deductible
+3. Add back the financial components of the pension expense in TEV based metrics
+    - Pension expense normally split into service costs, interest, expected return, amortization of losses.
+    - Only service cost is operational and should be deducted from EBIT/EBITDA for metrics (?)
+    - Most of pension expenses are non cash, only contributions are near term cash outflows
+
+**Summary:**
+-  Increasing the financial components of the pension expense will reduce EQ but not EV
+- Increasing the service cost component will reduce both EQ and EV
+    - Financial components are not cash tax deductible, which means DTA will increase as they will pay more book taxes than cash taxes in the future
+- Pension payments to employees do not affect anything
+- Pension Contributions generally won’t affect EV unless the contributions flip a plan from underfunded to funded, because Net pension assets count as net operating assets
+
+**Op and Cap leases in EV**
+- Capital leases always added back because metrics like EBITDA already add back expenses
+- Op leases previously not included in EV, 2019 change to accounting such that GAAP only has one expense item, IFRS has an interest and depreciation element. If IFRS use EBITDA for multiple, must add Op leases in TEV, but GAAP still have choice
+    - Op leases usually don’t impact EV. But under IFRS, changes could affect TEV because lease assets are operational but lease liabilities are not
+
+**Net Operating Loss**
+- Subtract BS NOLs within the DTA, counting them as non-operating assets
+    - NOLs often worth something to acquirers in M&A deals
+    - Adjust the NOL balance if the company has recorded a “Valuation allowance” against the DTA (NOL * valuation allowance/DTA)
+- Goodwill and other intangible assets: Do not adjust for these in EV bridge because acquired companies are operating assets
+- Industry specific assets: Do not remove in EV bridge
+- Provisions and other liabilities: If related to simple timing differences or unknown and uncertain future expenses, do not add
+Legal & restructuring liabilities: Rarely count in EV bridge
+- Deferred Tax Liabilities:	Do not include in bridge, correspond to simple timing difference that will reverse in the future

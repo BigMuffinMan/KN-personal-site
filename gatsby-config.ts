@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
     siteTitle: `∑rgodicity`,
     siteTitleAlt: `∑rgodicity - a minimal blog`,
     siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteUrl: `https://ergodicity.netlify.app`,
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,

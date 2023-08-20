@@ -32,6 +32,10 @@ const config: GatsbyConfig = {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: 'Notes',
+            slug: '/notes',
+          },
         ],
         externalLinks: [
           {
@@ -62,12 +66,12 @@ const config: GatsbyConfig = {
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/sigma192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
+            src: `/sigma512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
           },
